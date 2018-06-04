@@ -1,0 +1,27 @@
+{
+  "name": "lightbox",
+  "version": "1.0.0",
+  "description": "A simple lightbox script",
+  "main": "lightbox.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteCube/lightbox.git"
+  },
+  "keywords": [
+    "whitecube",
+    "lightbox",
+    "js"
+  ],
+  "author": "whitecube",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whiteCube/lightbox/issues"
+  },
+  "homepage": "https://github.com/whiteCube/lightbox#readme",
+  "dependencies": {
+    "whitecube-dom": "^1.0.2"
+  }
+}
