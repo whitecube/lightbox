@@ -1,4 +1,4 @@
-import { Dom, DomCollection, DomElement } from './dom.js';
+import { Dom, DomCollection } from './dom.js';
 
 /*
     Example config object: {
