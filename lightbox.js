@@ -27,7 +27,9 @@ export default class Lightbox {
         this.elements = Dom.qsa(this.config.elements);
         this.ui = {};
         this.ui.container = Dom.element('div', ['lightbox']);
-        this.ui.overlay = Dom.element('div', ['lightbox__overlay'], null, { 'aria-hidden': 'true' })
+        this.ui.overlay = Dom.element('div', ['lightbox__overlay'], null, {
+            'aria-hidden': 'true'
+        })
             .insertInto(this.ui.container);
         this.createItems();
         this.createToolbar();
@@ -38,7 +40,9 @@ export default class Lightbox {
         this.ui.items = new DomCollection;
         this.elements.each((el, index) => {
             el.setAttribute('data-ref', index);
-            let item = Dom.element('div', ['lightbox__item'], null, { 'data-ref': index });
+            let item = Dom.element('div', ['lightbox__item'], null, {
+                'data-ref': index
+            });
             let image = Dom.element('img', ['lightbox__image'], null, {
                 src: el.attributes['data-image']
             });
@@ -71,6 +75,12 @@ export default class Lightbox {
         this.ui.close.on('click', (e) => this.hide(e));
         this.ui.prev.on('click', (e) => this.prev(e));
         this.ui.next.on('click', (e) => this.next(e));
+        document.addEventListener('keyup', (e) => {
+            let key = e.key || e.keyCode;
+            if (key == 'Escape' || key == 'Esc' || key == 27) return this.hide(e);
+            if (key == 'ArrowLeft' || key == 37) return this.prev(e);
+            if (key == 'ArrowRight' || key == 39) return this.next(e);
+        });
     }
 
     show(e) {
@@ -131,4 +141,3 @@ export default class Lightbox {
     }
 
 }
-
