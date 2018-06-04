@@ -61,10 +61,10 @@ Generated markup (placed before the closing body tag):
 <div class="lightbox">
   <div class="lightbox__overlay" aria-hidden="true"></div>
   <div class="lightbox__item" data-ref="0">
-    <img class="lightbox__image" src="//localhost:3000/uploads/gallery1.png">
+    <img class="lightbox__image" src="https://unsplash.com/photos/UA741brUQng">
   </div>
   <div class="lightbox__item" data-ref="1">
-    <img class="lightbox__image" src="//localhost:3000/uploads/gallery2.png">
+    <img class="lightbox__image" src="https://unsplash.com/photos/Ytfv6cLvsIU">
   </div>
   <div class="lightbox__toolbar">
     <a class="lightbox__control lightbox__control--prev">
