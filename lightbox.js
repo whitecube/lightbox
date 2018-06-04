@@ -1,4 +1,4 @@
-import { Dom, DomCollection } from './dom.js';
+import { Dom, DomCollection } from 'whitecube-dom';
 
 /*
     Example config object: {
