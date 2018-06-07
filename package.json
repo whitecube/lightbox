@@ -1,6 +1,6 @@
 {
   "name": "whitecube-lightbox",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple lightbox script",
   "main": "lightbox.js",
   "scripts": {
