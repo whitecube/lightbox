@@ -76,10 +76,9 @@ export default class Lightbox {
         this.ui.prev.on('click', (e) => this.prev(e));
         this.ui.next.on('click', (e) => this.next(e));
         document.addEventListener('keyup', (e) => {
-            let key = e.key || e.keyCode;
-            if (key == 'Escape' || key == 'Esc' || key == 27) return this.hide(e);
-            if (key == 'ArrowLeft' || key == 37) return this.prev(e);
-            if (key == 'ArrowRight' || key == 39) return this.next(e);
+            if (e.key == 'Escape' || ekey == 'Esc' || e.keyCode == 27) return this.hide(e);
+            if (e.key == 'ArrowLeft' || e.keyCode == 37) return this.prev(e);
+            if (e.key == 'ArrowRight' || e.keyCode == 39) return this.next(e);
         });
     }
 
